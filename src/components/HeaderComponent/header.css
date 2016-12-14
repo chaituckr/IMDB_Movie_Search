@@ -1,0 +1,11 @@
+/*Write the styles realated to AboutPage*/
+.navbar-default {
+    background-color: #25556d;
+}
+
+.company{
+    padding: 12px;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}

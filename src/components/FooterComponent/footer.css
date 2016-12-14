@@ -1,0 +1,11 @@
+footer {
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    margin: auto;
+    position: fixed;
+    bottom: 0px;
+    height: 30px;
+    width: 84.56%;
+    background: rgb(37, 85, 109);
+}
