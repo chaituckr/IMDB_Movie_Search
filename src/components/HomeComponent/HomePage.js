@@ -4,10 +4,9 @@ var imdb = require('imdb-api');
 var Properties = require('../../utils/Properties');
 var Action = require('../../actions/Action');
 var MovieStore = require('../../stores/MovieStore');
-
 var SearchBox = require('../SearchComponent/Search');
 
-function debounce(fn, delay) {
+/*function debounce(fn, delay) {  //This function can be used to autopopulate data while typing in searchbox
     var timer = null;
     return function () {
         var context = this, args = arguments;
@@ -16,7 +15,7 @@ function debounce(fn, delay) {
             fn.apply(context, args);
         }, delay);
     };
-}
+}*/
 
 var HomePage = React.createClass({
 
@@ -38,7 +37,7 @@ var HomePage = React.createClass({
 
     componentWillMount: function() {
         MovieStore.addChangeListener(this.onChange);
-        this.searchWithText = debounce(this.searchWithText,300);
+        //this.searchWithText = debounce(this.searchWithText,300);
     },
 
     componentWillUnmount: function() {
@@ -85,9 +84,3 @@ var HomePage = React.createClass({
 });
 
 module.exports = HomePage;
-//<span className="input-group-addon">Search For Movie</span>
-
-/*
- <footer>
- with <span className="glyphicon glyphicon-heart"></span> from CKR.
- </footer>*/
