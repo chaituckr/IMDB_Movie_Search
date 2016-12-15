@@ -2,7 +2,6 @@
 var AppDispatcher = require('.././dispatcher/AppDispatcher');
 var EventEmitter = require('events').EventEmitter;
 var assign = require('object-assign');
-var Properties = require('../utils/Properties');
 var imdb = require('imdb-api');
 
 var state = {};

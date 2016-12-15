@@ -1,10 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom'
 var imdb = require('imdb-api');
-var Properties = require('../../utils/Properties');
 var Action = require('../../actions/Action');
-var MovieStore = require('../../stores/MovieStore');
-var SearchBox = require('../SearchComponent/Search');
+var MovieStore = require('../../stores/MovieStore');;
 
 /*function debounce(fn, delay) {  //This function can be used to autopopulate data while typing in searchbox
     var timer = null;
